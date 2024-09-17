@@ -1,0 +1,431 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: Inter;
+    background-color: var(--secondary);
+    color: white;
+}
+
+.banner {
+    width: 100%;
+    height: 22.5rem;
+
+    background-image: url("../assets/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.saude {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    padding: 3rem 1.5rem;
+    background-color: var(--primary);
+}
+
+.saude h2 {
+    font-family: Inter;
+    font-size: 2.3rem;
+  
+    color: var(--text);
+}
+
+.saude p {
+    font-size: 1.5rem;
+    
+    color: var(--text);
+}
+
+.modalidades {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    background-color: var(--secondary);
+}
+
+.modalidades h2 {
+    margin: 2.5rem 1.5rem;
+
+    font-size: 2.25rem;
+
+    color: #FFF;
+}
+
+.area-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 80px;
+}
+
+.area-card div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 25rem;
+
+    border-radius: 10px;
+    background-color: var(--primary);
+}
+
+.area-card div:hover {
+    cursor: pointer;
+
+    border: 1px solid #fafafa;
+}
+
+.area-card div img {
+    width: 20rem;
+    padding-top: 1.2rem;
+    border-radius: 0.6rem;
+}
+
+.area-card div span {
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    
+    color: var(--text);
+}
+
+.button-modalidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-modalidades a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26rem;
+    height: 3rem;
+
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    
+    border: none;
+    border-radius: 10px;
+    margin: 38px 0 28px;
+
+    background-color: var(--primary);
+    color: #000;
+}
+
+.button-modalidades a:hover {    
+    border: 1px solid #fafafa;
+}
+
+.formulario {
+    display: flex;
+    justify-content: space-around;
+    
+    width: 100%;
+    height: 46rem;
+    
+    background-color: #262626;
+
+}
+
+.formulario div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.formulario div h2 {
+    font-family: Inter;
+    font-size: 2rem;
+
+    color: #FFF;
+}
+
+#formCadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    width: 34rem;
+    padding: 1rem;
+
+    border-radius: 10px;
+    border: 1px solid var(--primary);
+}
+
+#formCadastro label {
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 700;
+    
+    color: #FFF;
+}
+
+#formCadastro input {
+    padding: 10px;
+
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+
+    color: #FFF;
+    background-color: var(--secondary);
+}
+
+#formCadastro input::placeholder {
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: mulish;
+
+    color: #FFF;
+}
+
+#formLogin {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    width: 34rem;
+    margin: 0 4rem;
+    padding: 1.4rem;
+
+    border-radius: 10px;
+    border: 1px solid var(--primary);
+}
+
+#formLogin label {
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 700;
+    
+    color: #FFF;
+}
+
+#formLogin input {
+    padding: 10px;
+
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+
+    color: #FFF;
+    background-color: var(--secondary);
+}
+
+#formLogin input::placeholder {
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: italic;
+
+    color: #FFF;
+}
+
+#formLogin span, #formLogin a{
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: italic;
+
+    color: #FFF;
+}
+
+.formBotao {
+    width: 155px;
+    height: 40px;
+    cursor: pointer;
+    margin: 14px 0;
+
+    border: none;
+    border-radius: 5px;
+
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 700;
+    
+    color: #000;
+    background-color: var(--primary);
+}
+
+.formBotao:hover {
+    opacity: 0.8;
+}
+
+.imagemCadastro {
+    margin-top: 20px;
+    width: 30%;
+    height: 700px;
+
+    background-image: url("../assets/CadastroImagem.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.imagemLogin {
+    width: 30%;
+    height: 100%;
+
+    background-image: url("../assets/loginImagem.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.mensagemSucesso {
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+
+.mensagemErro {
+    font-size: 1.2rem;
+    color: #fa2424;
+}
+
+.tabelaUsuario {
+    margin: 2rem 0;
+}
+
+.tabelaUsuario tr th{
+    padding: 0 2rem;
+}
+
+.listaUsuario {
+    height: calc(100vh - 12rem);
+    padding: 4rem;
+}
+
+.tabelaInfo td{
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.tabelaBotao {
+    padding: 0 1rem;
+    margin: 0 1rem;
+    
+    background-color: rgb(97, 93, 93);
+    border-radius: 5px;
+    color: white;
+}
+
+.editarUsuario {
+    padding: 4rem;
+}
+
+.tela-modalidades h2 {
+    margin: 2rem 1.2rem;
+}
+
+.mainAcesso {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 42rem;
+    padding: 2rem;
+}
+
+.mainAcesso div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    padding: 2rem;
+}
+
+.botaoPrimario {
+    width: 14rem;
+    padding: 0.4rem;
+
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(97, 93, 93);
+}
+
+.mensagemAcesso {
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+}
+
+.cadastroModalidade {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 42.5rem;
+    padding: 2rem;
+}
+
+#formModalidade {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    height: fit-content;
+    margin: 1rem 0;
+    padding: 2rem;
+
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+#formModalidade label{
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+#formModalidade input[type='text'], #formModalidade textarea{
+    font-size: 1rem;
+    padding: 1%;
+}
+
+#descricao {
+    resize: vertical;
+}
+
+.botoesModalidade {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    margin-top: 2rem;
+}
+
+.botoesModalidade button {
+    width: 6rem;
+    padding: 1%;
+
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    
+    background-color: var(--primary);
+}
+
+.botoesModalidade a {
+    width: 6rem;
+    padding: 1%;
+
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    
+    background-color: rgb(97, 93, 93);
+    color: white;
+}

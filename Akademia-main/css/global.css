@@ -1,0 +1,18 @@
+:root {
+    --primary: #FAD824;
+    --secondary: #262626;
+
+    --text: #0A0A0A;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+body{
+    zoom: 0.9; /* Define zoom do navegador para 90% */
+}
